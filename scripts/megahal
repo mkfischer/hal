@@ -1,9 +1,13 @@
 #!/usr/bin/env python
 
-from optparse import OptionParser
 import sys
+from optparse import OptionParser
 
-from megahal import *
+from megahal import (
+    DEFAULT_BRAINFILE, DEFAULT_TIMEOUT, DEFAULT_ORDER, MegaHAL,
+    __version__,
+)
+
 
 def main(argv=None):
     optparse = OptionParser(version=__version__, description=__doc__)
@@ -22,6 +26,7 @@ def main(argv=None):
     megahal.interact()
 
     return 0
+
 
 if __name__ == '__main__':
     sys.exit(main())

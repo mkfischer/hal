@@ -1,0 +1,8 @@
+*.pyc
+*.pyc
+/dist/
+/build/
+*.egg-info
+*.egg
+**/.vscode
+**/.mypy_cache
